@@ -6,7 +6,7 @@ int main()
     cout<<"hello world.";
     cout<<"enter a:";
     cin>>a;
-    cout<<"enter b:";
+    cout<<"enter c:";
     cin>>b;
     int t = a * b;
     cout<<"product is:"<<t;
