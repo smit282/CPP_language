@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int a,b,c,d,fail,marks,total,per,acc,stat,eco;
+    int total,per,acc,stat,eco;
     cout<<"enter the acc marks:";
     cin>>acc;
     cout<<"enter the stat marks:";
