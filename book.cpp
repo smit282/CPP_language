@@ -2,7 +2,7 @@
 using namespace std;
 class book
 {
-    int book_no;
+    int bookno;
     char booktitle[20];
     float price;
     int total_cost(int n)
@@ -24,7 +24,7 @@ class book
     void input()
     {
         cout<<"Enter bookno:";
-        cin>>book_no;
+        cin>>bookno;
         cout<<"Enter booktitle:";
         cin>>booktitle;
         cout<<"Enter price:";
