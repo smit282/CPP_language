@@ -2,38 +2,38 @@
 using namespace std;
 class book
 {
-    int bookno;
+    int book_no;
     char booktitle[20];
-    float price,value;
-    float n;
-    float total_cost()
+    float price;
+    int total_cost(int n)
     {
         return(price*n);
     } 
     public:
-    float input()
+    void purchase()
+    {
+        int n,tp;
+        float gst,gst_p;
+        cout<<"number of book purchase:";
+        cin>>n;
+        tp=total_cost(n);
+        gst=(float)tp*0.12;
+        gst_p=tp+gst;
+        cout<<"your total cost with gst(12%) is:"<<gst_p;
+    }
+    void input()
     {
         cout<<"Enter bookno:";
-        cin>>bookno;
+        cin>>book_no;
         cout<<"Enter booktitle:";
         cin>>booktitle;
         cout<<"Enter price:";
         cin>>price;
-        cout<<"Enter n:";
-        cin>>n;
-        value=total_cost();
-    }
-    float purchase()
-    {
-        cout<<"enter book no:"<<bookno<<endl;
-        cout<<"enter book title:"<<booktitle<<endl;
-        cout<<"Enter price:"<<price<<endl;
-        cout<<"value:"<<value<<endl;
+        purchase();
     }
 };
 int main()
 {
     book b;
     b.input();
-    b.purchase();
 }
