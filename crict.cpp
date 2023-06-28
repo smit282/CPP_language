@@ -2,16 +2,17 @@
 using namespace std;
 class batsman
 {
-    int bcode,innings,notout,runs,batavg;
+    int bcode,innings,notout,runs;
+    float batavg;
     char bname[20];
-    void calcavg()
+    float calavg()
     {
-        batavg=runs/(innings-notout);
+        return runs/(innings-notout);
     } 
     public:
     void readdata()
     {
-        cout<<"Enter bcode :";
+        cout<<"Enter number :";
         cin>>bcode;
         cout<<"Enter Name:";
         cin>>bname;
@@ -21,15 +22,15 @@ class batsman
         cin>>notout;
         cout<<"Enter runs:";
         cin>>runs;
-        calcavg();
+        batavg=calavg();
     }
     void displaydata()
     {
-        cout<<"bcode:"<<bcode<<endl;
-        cout<<"bname:"<<bname<<endl;
+        cout<<"number:"<<bcode<<endl;
+        cout<<"name:"<<bname<<endl;
         cout<<"innings:"<<innings<<endl;
         cout<<"notout:"<<notout<<endl;
-        cout<<"runs:"<<runs<<endl;
+        cout<<"inning runs:"<<runs<<endl;
         cout<<"batavg:"<<batavg<<endl;
     }
 };

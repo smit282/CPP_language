@@ -4,7 +4,7 @@ class student
 {
     int admno;
     char sname[20];
-    float maths, sci, eng, total;
+    float maths, sci, eng, total ,per;
     float ctotal()
     {
         return maths+sci+eng;
@@ -22,7 +22,8 @@ class student
         cin>>sci;
         cout<<"Enter English Marks:";
         cin>>eng;
-        total= ctotal();
+        total=ctotal();
+        per=total/3;
     }
     void showdata()
     {
@@ -32,6 +33,7 @@ class student
         cout<<"Science Marks:"<<sci<<endl;
         cout<<"English Marks:"<<eng<<endl;
         cout<<"Total Marks:"<<total<<endl;
+        cout<<"per:"<<per<<endl;
     }
 };
 int main()

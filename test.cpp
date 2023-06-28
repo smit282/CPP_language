@@ -3,9 +3,9 @@ using namespace std;
 class TEST
 {
     int testcode;
-    string description;
-    int nocandidate;
-    int calcntr()
+    char description[30];
+    int nocandidate,center;
+    float callcenter()
     {
         return(nocandidate/100+1);
     }
@@ -18,14 +18,14 @@ class TEST
         cin>>description;
         cout<<"Enter nocandidate:";
         cin>>nocandidate;
-        calcntr();
+        center=callcenter();
     }
     void disptest()
     {
         cout<<"testcode:"<<testcode<<endl;
         cout<<"description:"<<description<<endl;
         cout<<"nocandidate:"<<nocandidate<<endl;
-        cout<<"number of calcntr:"<<calcntr()<<endl;
+        cout<<"center:"<<center<<endl;
     }
 };
 int main()
