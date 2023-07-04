@@ -24,6 +24,7 @@ class box
     }
 };
 int main()
+
 {
     box a,b,c;
     a.setdata(3,6,9);
