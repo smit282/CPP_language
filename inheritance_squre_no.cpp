@@ -19,7 +19,6 @@ class derived : public base
     void getN()
     {
     for(i=1;i<=n;++i)
-    
         {
             cout<<"square of num is"<<i<<":"<<i*i<<endl;
         }
