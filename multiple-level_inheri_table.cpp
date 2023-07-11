@@ -1,4 +1,3 @@
-//table multilevel
 #include<iostream>
 using namespace std;
 class ABC
